@@ -43,6 +43,11 @@ try:
     else:
         open("{}\day{}\day{}.py".format(year, day, day), "x")
 
+    if os.path.isfile("{}\{}".format(day_path, "day{}_2.py".format(day))):
+        pass
+    else:
+        open("{}\day{}\day{}_2.py".format(year, day, day), "x")
+
     if os.path.isfile("{}\{}".format(day_path, "day{}Input.txt".format(day))):
         pass
     else:
