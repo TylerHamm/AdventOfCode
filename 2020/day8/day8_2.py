@@ -25,7 +25,7 @@ for i in reversed(range(len(data))):
         final_jmp_ind = i
         break
 
-for i in range(len(data))
+for i in range(len(data)):
     if line.group('instruction') == 'jmp':
         if line.group('op') == '+':
             if line.group('value') + i > final_jump_ind:
